@@ -28,7 +28,7 @@ export default async function POST(request: Request) {
 			{
 				role: "system",
 				content:
-					"You are a helpful assistant. You explain software concepts simply to intermediate programmers.",
+					"You are a helpful assistant. You explain Jiu Jitsu techniques, principles, and concepts to people.",
 			},
 			...messages,
 		],
