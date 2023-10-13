@@ -11,7 +11,7 @@ export default function Home() {
 	};
 
 	return (
-		<main className="overflow-hidden w-full h-[100dvh] relative flex">
+		<main className="overflow-hidden w-full max-h-screen h-[100dvh] relative flex">
 			{isComponentVisible ? (
 				<MobileSiderbar toggleComponentVisibility={toggleComponentVisibility} />
 			) : null}

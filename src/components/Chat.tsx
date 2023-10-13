@@ -68,7 +68,7 @@ const Chat = (props: any) => {
 							{messages.length === 0 ? (
 								<div className="py-10 relative w-full flex flex-col h-full">
 									<div className="flex items-center justify-center gap-2"></div>
-									<div className="flex flex-col h-[100dvh] justify-center space-y-2 align-middle items-center">
+									<div className="flex flex-col max-h-screen h-[100dvh] justify-center space-y-2 align-middle items-center">
 										<Image
 											src="/MultiColorS_48.png"
 											width={100}
