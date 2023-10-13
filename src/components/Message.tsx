@@ -50,6 +50,7 @@ const Message = (props: any) => {
 								) : (
 									<div className="w-full dark:prose-invert dark markdown prose">
 										<ReactMarkdown
+											// eslint-disable-next-line
 											children={text}
 											remarkPlugins={[remarkMath, remarkGfm]}
 											rehypePlugins={[rehypeKatex]}
