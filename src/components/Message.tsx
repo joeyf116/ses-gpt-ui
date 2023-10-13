@@ -16,8 +16,8 @@ const Message = (props: any) => {
 
 	return (
 		<div
-			className={`group w-full text-gray-800 dark:text-gray-100 border-b border-black/10 dark:border-gray-900/50 ${
-				isUser ? "dark:bg-gray-800" : "bg-gray-50 dark:bg-[#444654]"
+			className={`group w-full text-gray-100 border-b border-gray-900/50 ${
+				isUser ? "bg-gray-800" : "bg-[#444654]"
 			}`}
 		>
 			<div className="text-base gap-4 md:gap-6 md:max-w-2xl lg:max-w-xl xl:max-w-3xl flex lg:px-0 m-auto w-full">
@@ -33,12 +33,12 @@ const Message = (props: any) => {
 						<div className="text-xs flex items-center justify-center gap-1 absolute left-0 top-2 -ml-4 -translate-x-full group-hover:visible !invisible">
 							<button
 								disabled
-								className="text-gray-300 dark:text-gray-400"
+								className="text-gray-400"
 							></button>
 							<span className="flex-grow flex-shrink-0">1 / 1</span>
 							<button
 								disabled
-								className="text-gray-300 dark:text-gray-400"
+								className="text-gray-400"
 							></button>
 						</div>
 					</div>
@@ -48,7 +48,7 @@ const Message = (props: any) => {
 								{!isUser && text === null ? (
 									<TbCursorText className="h-6 w-6 animate-pulse" />
 								) : (
-									<div className="w-full dark:prose-invert dark markdown prose">
+									<div className="w-full prose-invert dark markdown prose">
 										<ReactMarkdown
 											// eslint-disable-next-line
 											children={text}

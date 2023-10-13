@@ -38,7 +38,7 @@ const Chat = (props: any) => {
 			<div className="sticky top-0 z-10 flex items-center border-b border-white/20 bg-gray-800 pl-1 pt-1 text-gray-200 sm:pl-3 md:hidden">
 				<button
 					type="button"
-					className="-ml-0.5 -mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-md hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white dark:hover:text-white"
+					className="-ml-0.5 -mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white hover:text-white"
 					onClick={toggleComponentVisibility}
 				>
 					<span className="sr-only">Open sidebar</span>
@@ -51,11 +51,11 @@ const Chat = (props: any) => {
 			</div>
 			<div className="relative h-full w-full transition-width flex flex-col overflow-hidden items-stretch flex-1">
 				<div className="flex-1 overflow-hidden">
-					<div className="react-scroll-to-bottom--css-ikyem-79elbk h-full dark:bg-gray-800">
+					<div className="react-scroll-to-bottom--css-ikyem-79elbk h-full bg-gray-800">
 						<div className="react-scroll-to-bottom--css-ikyem-1n7m0yu">
 							{messages.length > 0 ? (
 								<div className="flex flex-col items-center text-sm bg-gray-800">
-									<div className="flex w-full items-center justify-center gap-1 border-b border-black/10 bg-gray-50 p-3 text-gray-500 dark:border-gray-900/50 dark:bg-gray-700 dark:text-gray-300">
+									<div className="flex w-full items-center justify-center gap-1 border-b p-3 border-gray-900/50 bg-gray-700 text-gray-300">
 										Model: {selectedModel.name}
 									</div>
 									{messages.map((message, index) => (
@@ -76,17 +76,17 @@ const Chat = (props: any) => {
 											alt="Picture of the author"
 											className="shadow-full"
 										/>
-										<h1 className="text-2xl sm:text-4xl font-semibold text-gray-200 dark:text-gray-600">
+										<h1 className="text-2xl sm:text-4xl font-semibold text-gray-200">
 											SES | GPT
 										</h1>
 									</div>
 								</div>
 							) : null}
-							<div className="flex flex-col items-center text-sm dark:bg-gray-800"></div>
+							<div className="flex flex-col items-center text-sm bg-gray-800"></div>
 						</div>
 					</div>
 				</div>
-				<div className="absolute bottom-0 left-0 w-full border-t md:border-t-0 dark:border-white/20 md:border-transparent md:dark:border-transparent md:bg-vert-light-gradient bg-white dark:bg-gray-800 md:!bg-transparent dark:md:bg-vert-dark-gradient pt-2">
+				<div className="absolute bottom-0 left-0 w-full border-t md:border-t-0 border-white/20 md:border-transparent md:bg-vert-light-gradient bg-gray-800 md:!bg-transparent dark:md:bg-vert-dark-gradient pt-2">
 					<form
 						className="stretch mx-2 flex flex-row gap-3 last:mb-2 md:mx-4 md:last:mb-6 lg:mx-auto lg:max-w-2xl xl:max-w-3xl"
 						onSubmit={handleSubmit}
@@ -99,7 +99,7 @@ const Chat = (props: any) => {
 									</div>
 								</div>
 							) : null}
-							<div className="flex flex-col w-full py-2 flex-grow md:py-3 md:pl-4 relative border border-black/10 bg-white dark:border-gray-900/50 dark:text-white dark:bg-gray-700 rounded-md shadow-[0_0_10px_rgba(0,0,0,0.10)] dark:shadow-[0_0_15px_rgba(0,0,0,0.10)]">
+							<div className="flex flex-col w-full py-2 flex-grow md:py-3 md:pl-4 relative border border-gray-900/50 text-white bg-gray-700 rounded-md shadow-[0_0_15px_rgba(0,0,0,0.10)]">
 								<textarea
 									ref={textAreaRef}
 									value={input}
@@ -111,7 +111,7 @@ const Chat = (props: any) => {
 									}}
 									// rows={1}
 									placeholder="Send a message..."
-									className="m-0 w-full resize-none border-0 bg-transparent p-0 pr-7 focus:ring-0 focus-visible:ring-0 dark:bg-transparent pl-2 md:pl-0"
+									className="m-0 w-full resize-none border-0 p-0 pr-7 focus:ring-0 focus-visible:ring-0 bg-transparent pl-2 md:pl-0"
 									onChange={handleInputChange}
 								></textarea>
 								<button
@@ -125,7 +125,7 @@ const Chat = (props: any) => {
 							</div>
 						</div>
 					</form>
-					<div className="px-3 pt-2 pb-3 text-center text-xs text-black/50 dark:text-white/50 md:px-4 md:pt-3 md:pb-6">
+					<div className="px-3 pt-2 pb-3 text-center text-xs text-white/50 md:px-4 md:pt-3 md:pb-6">
 						<span>
 							ChatGPT Clone may produce inaccurate information about people,
 							places, or facts.
